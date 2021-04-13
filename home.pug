@@ -1,0 +1,136 @@
+extends base.pug
+
+block scripts
+    scripts(src="/static/index.js")
+
+block style
+    style
+        include ../static/style.css
+
+
+block content
+    section#introSection
+      p.main Welcome To Nriyta Dance Academy
+      p.content Eat Sleep Dance Repeat
+    
+    br
+    section#instructors
+      h3  Instructors
+      div.para
+        p Since our establishment, we have gathered a team of more than 20 dance instructors who have experience in various dance styles.
+      div.card1
+          h3 Kate Anderson
+         
+      div.card2
+          h3 Richard Williams
+        
+      div.card3
+          h3 Maryl McMillan
+      
+    br
+    section#sponsorSection
+      h2 Partners
+        img(src="/static/p.png", alt="")
+      div.image1
+        img(src="/static/p2.png", alt="")
+      div.image2
+        img(src="/static/p3.png", alt="")
+      div.image3
+        img(src="/static/p4.png", alt="")
+      
+    br
+    section#pricingplan
+      h2 Our Pricing Plan
+        div.box1
+          h3 Basic
+          hr
+          p.one
+            | 1 personal Lesson
+          hr
+          p.one
+            | 3 Group Lessons
+          hr
+          p.one
+            | Free First Lesson
+          hr
+          p.one1
+            | $25 
+          div.btn
+          button Buy Now
+        div.box2
+          h3 Standard
+          hr
+          p.one
+            | 3 personal Lesson
+          hr
+          p.one
+            | 15 Workshops
+          hr
+          p.one
+            | 2 Free Lessons
+          hr
+          p.one1
+            | $45 
+          div.btn
+          button Buy Now
+        div.box3
+          h3 Premium
+          hr
+          p.one
+            | 5 personal Lesson
+          hr
+          p.one
+            | 3 Classes For Teens
+          hr
+          p.one
+            | 3 First Lesson
+          hr
+          p.one1
+            | $70 
+          div.btn
+          button Buy Now
+    br
+
+    section#mission
+      div.miss
+        | Our Mission
+        div.dabba1
+          h3 Dedicated Instructors
+          img(src="/static/mission2.jpg", alt="" style = "border: 2px solid cyan")
+          p Nritya believes that we dance to express, hence, each dancer is unique. Our entire curriculum
+          br 
+          p.jerk
+            | revolves around finding your own niche’. Guest Faculty ensure that he students get to experience
+          br
+          p.jerk1
+            |  different choreography and teaching styles. Our dancers are trained in multiple dance forms 
+          br
+          p.jerk2
+            |  Bollywood, Indian Classical dance ,Indian Folk,Ballet, Jazz, Modern, Contemporary, Hip-Hop, 
+          br
+          p.jerk3
+            |  and much more.
+        div.dabba2
+          h3 A Variety of Classes
+          img(src="/static/mission3.jpg", alt="" style="border: 2px solid cyan")
+          p Nritya fuses multiple styles of Bollywood, Classical, and Contemporary training to create a fully
+          br 
+          p.jerk
+            | rounded curriculum that opens the dancer’s eyes and mind to all the choreographic possibilities
+          br
+          p.jerk1
+            | that they might want to experiment with. It also exposes the student to the diverse and beautiful
+          br
+          p.jerk2
+            | art that dance is, all the while training them for the professional stage. 
+          br
+    br
+    section#dancelesson
+      div.dance
+        | Take Your First Dance Lesson For Free
+        button.btn Book Lesson
+    footer#footersection
+      p
+      | Copyright &copy; 2020 Nritya Dance Academy | All Rights Reserved 
+    script
+      include ../static/index.js
